@@ -71,10 +71,8 @@ if(ALVAR_PACKAGE)
 endif(ALVAR_PACKAGE)
 
 # find package dependencies
-set( OpenCV_DIR "/home/ana/Software/master/share/OpenCV" )
 find_package( OpenCV REQUIRED )
 include_directories( ${OpenCV_INCLUDE_DIRS} )
-message( status "OpenCV INCLUDE DIRS: ${OpenCV_INCLUDE_DIRS}" )
 
 find_package(OpenGL)
 if(OPENGL_FOUND)
